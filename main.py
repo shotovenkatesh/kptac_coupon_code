@@ -38,6 +38,7 @@ END_DATE = "01/31/2024 04:32 pm"
 
 
 while value <= 250:
+    print(value)
     padded_value = str(value).zfill(3)
     final_code = f"{CODE}{padded_value}"
 
@@ -53,6 +54,7 @@ while value <= 250:
 
     #discount value type
     driver.find_element(By.XPATH,'/html/body/div[1]/div[2]/div/div/div/div/div/div/div[2]/form/div[2]/div[1]/div/div/button/div[1]/div').click()
+    time.sleep(1)
     driver.find_element(By.XPATH,'/html/body/div[1]/div[2]/div/div/div/div/div/div/div[2]/form/div[2]/div[1]/div/div/div/div[3]/ul/li[2]/a').click()
 
     #discount value
